@@ -8,4 +8,10 @@
   <ItemGroup>
     <ProjectReference Include="..\Kocdigital.Core\Kocdigital.Core.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
