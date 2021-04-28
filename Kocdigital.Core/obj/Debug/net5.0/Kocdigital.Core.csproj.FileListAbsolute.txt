@@ -1,0 +1,12 @@
+/Users/ahmet/Projects/Kocdigital/Kocdigital.Core/bin/Debug/net5.0/Kocdigital.Core.deps.json
+/Users/ahmet/Projects/Kocdigital/Kocdigital.Core/bin/Debug/net5.0/Kocdigital.Core.dll
+/Users/ahmet/Projects/Kocdigital/Kocdigital.Core/bin/Debug/net5.0/ref/Kocdigital.Core.dll
+/Users/ahmet/Projects/Kocdigital/Kocdigital.Core/bin/Debug/net5.0/Kocdigital.Core.pdb
+/Users/ahmet/Projects/Kocdigital/Kocdigital.Core/obj/Debug/net5.0/Kocdigital.Core.csprojAssemblyReference.cache
+/Users/ahmet/Projects/Kocdigital/Kocdigital.Core/obj/Debug/net5.0/Kocdigital.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ahmet/Projects/Kocdigital/Kocdigital.Core/obj/Debug/net5.0/Kocdigital.Core.AssemblyInfoInputs.cache
+/Users/ahmet/Projects/Kocdigital/Kocdigital.Core/obj/Debug/net5.0/Kocdigital.Core.AssemblyInfo.cs
+/Users/ahmet/Projects/Kocdigital/Kocdigital.Core/obj/Debug/net5.0/Kocdigital.Core.csproj.CoreCompileInputs.cache
+/Users/ahmet/Projects/Kocdigital/Kocdigital.Core/obj/Debug/net5.0/Kocdigital.Core.dll
+/Users/ahmet/Projects/Kocdigital/Kocdigital.Core/obj/Debug/net5.0/ref/Kocdigital.Core.dll
+/Users/ahmet/Projects/Kocdigital/Kocdigital.Core/obj/Debug/net5.0/Kocdigital.Core.pdb

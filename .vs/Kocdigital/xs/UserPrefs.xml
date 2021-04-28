@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{0102C27A-9EA4-4CBC-B3C4-D733C2662F36}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Kocdigital.Producer/Program.cs">
+    <Files>
+      <File FileName="Kocdigital.Producer/Program.cs" Line="17" Column="1" />
+      <File FileName="Kocdigital.Core/Model/DataModel.cs" Line="6" Column="2" />
+      <File FileName="Kocdigital.Core/Model/Configuration/RabbitMqOptions.cs" Line="6" Column="41" />
+      <File FileName="Kocdigital.Core/Model/Configuration/ProducerAppSetting.cs" Line="6" Column="57" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Kocdigital" expanded="True">
+            <Node name="Kocdigital.Core" expanded="True">
+              <Node name="Model" expanded="True">
+                <Node name="Configuration" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Kocdigital.Producer" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/ahmet/Projects/Kocdigital/Kocdigital.Producer/Program.cs" relfile="Kocdigital.Producer/Program.cs" line="12" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Kocdigital.Producer PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
