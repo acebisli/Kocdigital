@@ -9,8 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kocdigital.Core", "Kocdigit
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{237F7CB2-B8D7-43AB-BBE5-59FE931AE037}"
 	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.env = .env
+		.gitignore = .gitignore
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kocdigital.Consumer", "Kocdigital.Consumer\Kocdigital.Consumer.csproj", "{D137CC38-85CE-4B62-9144-467FA27E75DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kocdigital.WebApi", "Kocdigital.WebApi\Kocdigital.WebApi.csproj", "{74A9438E-1F40-414C-8F78-ABDA6800B346}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +33,14 @@ Global
 		{40D38B46-E172-4C56-B1AD-6240CB7904BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40D38B46-E172-4C56-B1AD-6240CB7904BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40D38B46-E172-4C56-B1AD-6240CB7904BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D137CC38-85CE-4B62-9144-467FA27E75DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D137CC38-85CE-4B62-9144-467FA27E75DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D137CC38-85CE-4B62-9144-467FA27E75DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D137CC38-85CE-4B62-9144-467FA27E75DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74A9438E-1F40-414C-8F78-ABDA6800B346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74A9438E-1F40-414C-8F78-ABDA6800B346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74A9438E-1F40-414C-8F78-ABDA6800B346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74A9438E-1F40-414C-8F78-ABDA6800B346}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

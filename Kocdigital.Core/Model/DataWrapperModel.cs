@@ -4,7 +4,7 @@ using System.Text.Json.Serialization;
 
 namespace Kocdigital.Core.Model
 {
-    public class DataWrapperModel
+    public class DataWrapperModel: IDataWrapperModel
     {
         [JsonPropertyName("id")]
         public string Id { get; set; }
@@ -20,5 +20,14 @@ namespace Kocdigital.Core.Model
 
         [JsonPropertyName("data")]
         public List<DataModel> Data { get; set; }
+    }
+
+    public interface IDataWrapperModel
+    {
+        string Id { get; set; }
+        string OperationName { get; set; }
+        string ClienName { get; set; }
+        DateTime CreatedTime { get; set; }
+        List<DataModel> Data { get; set; }
     }
 }

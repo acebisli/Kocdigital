@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace Kocdigital.Core.Model
 {
-    public class DataModel
+    public class DataModel: IDataModel
     {
         [JsonPropertyName("id")]
         public string Id { get; set; }
@@ -19,5 +19,15 @@ namespace Kocdigital.Core.Model
 
         [JsonPropertyName("status")]
         public string Status { get; set; }
+    }
+
+
+    public interface IDataModel
+    {
+        string Id { get; set; }
+        string MinValue { get; set; }
+        string MaxValue { get; set; }
+        double ActualValue { get; set; }
+        string Status { get; set; }
     }
 }
