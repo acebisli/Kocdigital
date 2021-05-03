@@ -1,9 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+      <OutputType>Library</OutputType>
     <TargetFramework>net5.0</TargetFramework>
+        <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
+        <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+
   </PropertyGroup>
   <ItemGroup>
+  <PackageReference Include="Automatonymous" Version="5.1.1" />
     <PackageReference Include="Bogus" Version="33.0.2" />
     <PackageReference Include="MassTransit.RabbitMQ" Version="7.1.8" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />

@@ -12,11 +12,12 @@ using RabbitMQ.Client;
 
 namespace Kocdigital.Producer
 {
-    class Program
+    public class Program
     {
         private static IBusControl bus;
         private static GenericAppSetting config;
-        static async Task Main(string[] args)
+        [STAThread]
+        public static void Main(string[] args)
         {
             config = AppSettingsHelper.GetConfig<GenericAppSetting>();
             bus = BusConfigurator.ConfigureBus(config, null);

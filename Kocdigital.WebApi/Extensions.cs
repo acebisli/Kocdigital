@@ -24,7 +24,7 @@ namespace Kocdigital.WebApi
                 .DefaultMappingFor<DataWrapperModel>(m => m
                 .IndexName(config.Elastic.IndexName)
             );
-            settings.BasicAuthentication("elastic", "changeme");
+            settings.BasicAuthentication(config.Elastic.Username, config.Elastic.Password);
 
             var client = new ElasticClient(settings);
 

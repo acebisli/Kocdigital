@@ -1,0 +1,21 @@
+FROM mcr.microsoft.com/dotnet/runtime:5.0 AS base
+WORKDIR /app
+FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
+WORKDIR /src
+
+COPY ["Kocdigital.Producer/Kocdigital.Producer.csproj","Kocdigital.Producer/"]
+COPY ["appsettings.json","Kocdigital.Producer/"]
+COPY ["Kocdigital.Core/Kocdigital.Core.csproj","Kocdigital.Core/"]
+RUN dotnet restore "Kocdigital.Producer/Kocdigital.Producer.csproj"
+
+COPY . .
+WORKDIR "/src/Kocdigital.Producer"
+RUN dotnet build "Kocdigital.Producer.csproj" -c Release -o /app
+FROM build as publish
+RUN dotnet publish "Kocdigital.Producer.csproj" -c Release -o /app
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app ./
+
+ENTRYPOINT ["dotnet", "Kocdigital.Producer.dll"]

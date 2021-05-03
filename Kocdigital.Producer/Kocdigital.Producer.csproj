@@ -1,9 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <TargetFramework>net5.0</TargetFramework>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
+        <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+
   </PropertyGroup>
+  <PropertyGroup>
+</PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Kocdigital.Core\Kocdigital.Core.csproj" />

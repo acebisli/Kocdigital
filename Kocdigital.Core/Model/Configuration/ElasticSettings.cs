@@ -10,5 +10,7 @@ namespace Kocdigital.Core.Model.Configuration
     {
         public string ConnectionUrl { get; set; }
         public string IndexName { get; set; }   
+        public string Username { get; set; }   
+        public string Password { get; set; }   
     }
 }
