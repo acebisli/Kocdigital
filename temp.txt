@@ -78,15 +78,27 @@ services:
       - elk
     depends_on:
       - elasticsearch
-
   kocdigitalproducer:
     container_name: producer
     build:
       context: .
-      dockerfile: Kocdigital.Producer/Dockerfile
-    depends_on:
-      - rabbitmq
-      - elasticsearch
+      dockerfile: DockerfileProducer
+    ports:
+      - "8000:8000"
+  kocdigitalconsumer:
+    container_name: consumer
+    build:
+      context: .
+      dockerfile: DockerfileConsumer
+    ports:
+      - "8005:8005"
+  kocdigitalwebapi:
+    container_name: webapi
+    build:
+      context: .
+      dockerfile: DockerfileWebapi
+    ports:
+      - "8005:8005"
 networks:
   elk:
     driver: bridge

@@ -1,0 +1,21 @@
+FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
+WORKDIR /app
+
+COPY ["Kocdigital.WebApi/Kocdigital.WebApi.csproj","Kocdigital.WebApi/"]
+COPY ["appsettings.json","Kocdigital.WebApi/"]
+COPY ["Kocdigital.Core/Kocdigital.Core.csproj","Kocdigital.Core/"]
+RUN dotnet restore "Kocdigital.WebApi/Kocdigital.WebApi.csproj"
+
+COPY . .
+WORKDIR "/app/Kocdigital.WebApi"
+RUN dotnet publish "Kocdigital.WebApi.csproj" -c Release -o out
+
+FROM mcr.microsoft.com/dotnet/aspnet:5.0
+WORKDIR /app
+ENV ASPNETCORE_URLS http://*:8010
+EXPOSE 8010
+COPY --from=build /app/Kocdigital.WebApi/out ./
+RUN ls
+
+
+ENTRYPOINT ["dotnet", "Kocdigital.WebApi.dll"]

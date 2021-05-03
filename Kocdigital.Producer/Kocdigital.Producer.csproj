@@ -1,16 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <OutputType>Library</OutputType>
     <TargetFramework>net5.0</TargetFramework>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
     <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
         <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
-
   </PropertyGroup>
-  <PropertyGroup>
-</PropertyGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\Kocdigital.Core\Kocdigital.Core.csproj" />
   </ItemGroup>

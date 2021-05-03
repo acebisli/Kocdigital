@@ -1,5 +1,5 @@
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
-WORKDIR /app
+WORKDIR /src
 
 COPY ["Kocdigital.Consumer/Kocdigital.Consumer.csproj","Kocdigital.Consumer/"]
 COPY ["appsettings.json","Kocdigital.Consumer/"]
@@ -7,14 +7,13 @@ COPY ["Kocdigital.Core/Kocdigital.Core.csproj","Kocdigital.Core/"]
 RUN dotnet restore "Kocdigital.Consumer/Kocdigital.Consumer.csproj"
 
 COPY . .
-WORKDIR "/app/Kocdigital.Consumer"
+WORKDIR "/src/Kocdigital.Consumer"
 RUN dotnet build "Kocdigital.Consumer.csproj" -c Release -o /app
 FROM build as publish
 RUN dotnet publish "Kocdigital.Consumer.csproj" -c Release -o /app
 
-FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:5.0
 WORKDIR /app
-COPY --from=build /app ./
-
+COPY --from=publish /app ./
 
 ENTRYPOINT ["dotnet", "Kocdigital.Consumer.dll"]
